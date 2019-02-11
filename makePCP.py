@@ -12,7 +12,7 @@ if not os.path.exists('images'):
 
 g=gfd.GenerateFunctionData()
 
-X, Y = g.generateLinearfunction(-0.1, 50)
+X, Y = g.generateLinearfunction(-1, 50)
 #X, Y = g.generateQuadraticfunction(1, 0)
 
 
@@ -20,7 +20,7 @@ data = [
     go.Parcoords(
         line = dict(color = 'black'),
         labelfont=dict(
-            size=30
+            size=100
         ),
         dimensions = list([
             dict(range=[-50, 100], label = 'X', values = X),

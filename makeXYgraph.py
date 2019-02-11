@@ -12,7 +12,7 @@ if not os.path.exists('images'):
 
 g=gfd.GenerateFunctionData()
 
-X, Y = g.generateLinearfunction(-0.1, 50)
+X, Y = g.generateLinearfunction(-1, 50)
 #X, Y = g.generateLinearfunction(1, 0)
 
 # Create a trace
@@ -34,13 +34,13 @@ layout = go.Layout(
     xaxis= dict(
         title='X',
         titlefont=dict(
-            size=30
+            size=100
         )
     ),
     yaxis=dict(
         title='Y',
         titlefont=dict(
-            size=30
+            size=100
         )
     ),
     
